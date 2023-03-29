@@ -29,12 +29,15 @@ const showTools = (data) => {
               
             
             </div>
-            <div class="card-footer bg-transparent border-tertiary d-flex justify-content-between">
+            <div class="card-footer bg-transparent border-tertiary d-flex justify-content-between align-items-center">
             <div>
-            <div>${tool.name}</div>
-            <div>${tool.published_in}</div>
+            <div><h4>${tool.name}</h4></div>
+            <div class="d-flex align-items-center gap-2">
+            <i class="fas fa-calendar m-0 p-0"></i>
+            <p class="m-0 p-0">${tool.published_in}</p>
             </div>
-            <div><i class="fa fas-arrow-right"></i></div>
+            </div>
+            <div><i class="fas fa-arrow-right text-danger" onclick="showsingleDetails('${tool.id}')"></i></div>
             
             </div>
           </div>
@@ -51,6 +54,13 @@ const showMore = () => {
   fetch("https://openapi.programming-hero.com/api/ai/tools")
     .then((res) => res.json())
     .then((data) => showTools(data.data.tools));
+};
+
+const showsingleDetails = (id) => {
+  const URL = `https://openapi.programming-hero.com/api/ai/tool/${id}`;
+  fetch(URL)
+    .then((res) => res.json())
+    .then((data) => console.log(data.data));
 };
 
 loadTolls();

@@ -70,8 +70,8 @@ const showSingleDetails = (data) => {
   <div class="row row-cols-1 row-cols-md-2 g-4" >
   <div class="col">
 
-  <div class="card h-100">
-  <img src="${data.image_link[0]}" class="card-img-top" alt="..." />
+  <div class="card h-75 w-100">
+  <h4>${data.description}</h4>
  
   <div class="card-body">
     <h5 class="card-title">features
@@ -99,7 +99,7 @@ const showSingleDetails = (data) => {
   
 
   <div class="col">
-  <div class="card h-100">
+  <div class="card h-75 w-100">
   <img src="${data.image_link[0]}" class="card-img-top" alt="..." />
  
   <div class="card-body">

@@ -106,7 +106,7 @@ const showSingleDetails = (data) => {
     <h5 class="card-title">features
     </h5>
    
-    <p class="card-title"> <ol><li>${data.features[0]}</li><li>${data.features[1]}</li><li>${data.features[2]}</li></ol></p>
+    <p class="card-title"> <ol><li>${data.features[0]}</li><li>${data.features[1]}</li></ol></p>
     
     
   

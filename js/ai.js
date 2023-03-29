@@ -70,7 +70,7 @@ const showSingleDetails = (data) => {
   <div class="row row-cols-1 row-cols-md-2 g-4" >
   <div class="col">
 
-  <div class="card h-75 w-100">
+  <div class="card h-100 p-3">
   <h4>${data.description}</h4>
  
   <div class="card-body">
@@ -82,24 +82,14 @@ const showSingleDetails = (data) => {
     
   
   </div>
-  <div class="card-footer bg-transparent border-tertiary d-flex justify-content-between align-items-center">
-  <div>
-  <div><h4>${data.name}</h4></div>
-  <div class="d-flex align-items-center gap-2">
-  <i class="fas fa-calendar m-0 p-0"></i>
-  <p class="m-0 p-0">${data.published_in}</p>
-  </div>
-  </div>
-  <div><i class="fas fa-arrow-right text-danger"></i></div>
   
-  </div>
 </div>
  
   </div>
   
 
   <div class="col">
-  <div class="card h-75 w-100">
+  <div class="card h-100 p-3">
   <img src="${data.image_link[0]}" class="card-img-top" alt="..." />
  
   <div class="card-body">
@@ -111,17 +101,7 @@ const showSingleDetails = (data) => {
     
   
   </div>
-  <div class="card-footer bg-transparent border-tertiary d-flex justify-content-between align-items-center">
-  <div>
-  <div><h4>${data.name}</h4></div>
-  <div class="d-flex align-items-center gap-2">
-  <i class="fas fa-calendar m-0 p-0"></i>
-  <p class="m-0 p-0">${data.published_in}</p>
-  </div>
-  </div>
-  <div><i class="fas fa-arrow-right text-danger"></i></div>
   
-  </div>
 </div>
 
   </div>

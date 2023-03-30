@@ -70,14 +70,61 @@ const showSingleDetails = (data) => {
   <div class="row row-cols-1 row-cols-md-2 g-4" >
   <div class="col">
 
-  <div class="card h-100 p-3">
+  <div class="card h-100 p-3 bg-danger-subtle">
+  <div class="">
   <h4>${data.description}</h4>
+  </div>
+  
  
-  <div class="card-body">
-    <h5 class="card-title">features
-    </h5>
+  <div class="card-body mx-2 px-2">
+  <div class="d-flex justify-content-center align-items-center gap-2 my-3">
+  <div class="d-flex justify-content-center align-items-center ">
+  <div class="  p-2 bg-light-subtle border rounded text-center text-success">
+  <span>${data.pricing[0].plan ? data.pricing[0].plan : "free of cost"}</span>
+  <span>${data.pricing[0].price ? data.pricing[0].price : "free of cost"}</span>
+ 
+  
+  </div>
+  </div>
+  <div class="d-flex justify-content-center align-items-center ">
+  <div class=" p-2 bg-light-subtle border rounded text-center ">
+  <span>${data.pricing[1].plan ? data.pricing[1].plan : "free of cost"}</span>
+  <span>${data.pricing[1].price ? data.pricing[1].price : "free of cost"}</span>
+  </div>
+  </div>
+  <div class="d-flex justify-content-center align-items-center  ">
+  <div class=" p-2 bg-light-subtle border rounded text-center">
+  <span>${data.pricing[2].plan ? data.pricing[2].plan : "free of cost"}</span>
+  <span>${data.pricing[2].price ? data.pricing[2].price : "free of cost"}</span>
+  </div>
+  </div>
+  
+  </div>
+
+
+  <div class="d-flex">
+
+  <div class="ms-2">
+  <h5 class="card-title">features
+  </h5>
+ 
+  <p class="card-title"> <ul><li>${data.features[1].feature_name}</li><li>${
+    data.features[2].feature_name
+  }</li><li>${data.features[3].feature_name}</li></ul></p>
+  </div>
+  <div>
+  <h5 class="card-title">features
+  </h5>
+ 
+  <p class="card-title"> <ul><li>${data.features[1].feature_name}</li><li>${
+    data.features[2].feature_name
+  }</li><li>${data.features[3].feature_name}</li></ul></p>
+  </div>
+  
+  </div>
+
+
    
-    <p class="card-title"> <ol><li>${data.features[0]}</li><li>${data.features[1]}</li><li>${data.features[2]}</li></ol></p>
     
     
   
@@ -96,7 +143,9 @@ const showSingleDetails = (data) => {
     <h5 class="card-title">features
     </h5>
    
-    <p class="card-title"> <ol><li>${data.features[0]}</li><li>${data.features[1]}</li></ol></p>
+    <p class="card-title"> <ol><li>${data.features[0]}</li><li>${
+    data.features[1]
+  }</li></ol></p>
     
     
   

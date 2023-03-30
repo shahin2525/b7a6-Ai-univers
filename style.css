@@ -13,3 +13,9 @@
   margin-bottom: 20px;
   padding-bottom: 30px;
 }
+.modal-dialog {
+  width: 940px !important;
+}
+.modal-shape {
+  width: 940px;
+}

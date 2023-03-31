@@ -70,15 +70,16 @@ const showSingleDetails = (data) => {
   <div class="row row-cols-1 row-cols-md-2 g-2" >
   <div class="col">
 
-  <div class="card h-100 p-3 bg-danger-subtle border-danger">
+  <div class="card h-100 p-1 bg-danger-subtle border-danger">
   <div class="">
   <h4>${data.description}</h4>
   </div>
   
  
   <div class="card-body">
-  <div class="d-flex justify-content-center align-items-center gap-2 my-3">
-  <div class="d-flex justify-content-center align-items-center ">
+  <div class="d-flex justify-content-center gap-2 my-3">
+
+  <div class="d-flex  align-items-center">
   <div class="  p-2 bg-light-subtle border rounded text-center text-success">
   <span>${data.pricing[0].plan ? data.pricing[0].plan : "free of cost"}</span>
   <span>${data.pricing[0].price ? data.pricing[0].price : "free of cost"}</span>
@@ -86,14 +87,14 @@ const showSingleDetails = (data) => {
   
   </div>
   </div>
-  <div class="d-flex justify-content-center align-items-center ">
-  <div class=" p-2 bg-light-subtle  rounded text-center ">
+  <div class="d-flex  align-items-center ">
+  <div class=" p-2 bg-light-subtle  rounded text-center text-warning">
   <span>${data.pricing[1].plan ? data.pricing[1].plan : "free of cost"}</span>
   <span>${data.pricing[1].price ? data.pricing[1].price : "free of cost"}</span>
   </div>
   </div>
-  <div class="d-flex justify-content-center align-items-center  ">
-  <div class=" p-2 bg-light-subtle  rounded text-center">
+  <div class="d-flex  align-items-center  ">
+  <div class=" p-2 bg-light-subtle  rounded text-center text-danger">
   <span>${data.pricing[2].plan ? data.pricing[2].plan : "free of cost"}</span>
   <span>${data.pricing[2].price ? data.pricing[2].price : "free of cost"}</span>
   </div>
@@ -149,17 +150,24 @@ const showSingleDetails = (data) => {
   
  
   <div class="card-body">
-  <div class="h-50 rounded mb-2" >
-  <img class="img-fluid h-100" src="${data.image_link[0]}"  alt="..." />
+  <div class="h-50 w-100 rounded mb-2 container-1" >
+  <div class="text-block">
+ 
+  <p> ${data.accuracy.score ? data.accuracy.score : ""}% accuracy 
+  </p>
+</div>
+      <img class="img-fluid h-100" src="${data.image_link[0]}"  alt="..." />
+      </div>
+  <h5 class=" mt-3">${data.input_output_examples[0].input}
+  </h5>
+  
+  <div class="d-flex align-items-center">
+  <p class="mt-3">${
+    data.input_output_examples[0].output
+      ? data.input_output_examples[0].output
+      : "No not yet take a break"
+  }</p>
   </div>
-    <h5 class="card-title my-2">${data.input_output_examples[0].input}
-    </h5>
-   
-    <p class="card-title">${
-      data.input_output_examples[0].output
-        ? data.input_output_examples[0].output
-        : "No not yet take a break"
-    }</p>
     
     
   

@@ -19,3 +19,17 @@
 .modal-shape {
   width: 940px;
 }
+
+.container-1 {
+  position: relative;
+}
+.text-block {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 10px;
+  background-color: rgb(212, 27, 27);
+  color: white;
+  padding: 0px 5px 0px 5px;
+  height: 35px;
+}

@@ -70,7 +70,7 @@ const showSingleDetails = (data) => {
   <div class="row row-cols-1 row-cols-md-2 g-2" >
   <div class="col">
 
-  <div class="card h-100 p-1 bg-danger-subtle border-danger">
+  <div class="card h-100 p-2 bg-danger-subtle border-danger ">
   <div class="">
   <h4>${data.description}</h4>
   </div>
@@ -87,13 +87,13 @@ const showSingleDetails = (data) => {
   
   </div>
   </div>
-  <div class="d-flex  align-items-center ">
+  <div class="d-flex  align-items-center">
   <div class=" p-2 bg-light-subtle  rounded text-center text-warning">
   <span>${data.pricing[1].plan ? data.pricing[1].plan : "free of cost"}</span>
   <span>${data.pricing[1].price ? data.pricing[1].price : "free of cost"}</span>
   </div>
   </div>
-  <div class="d-flex  align-items-center  ">
+  <div class="d-flex align-items-center">
   <div class=" p-2 bg-light-subtle  rounded text-center text-danger">
   <span>${data.pricing[2].plan ? data.pricing[2].plan : "free of cost"}</span>
   <span>${data.pricing[2].price ? data.pricing[2].price : "free of cost"}</span>
